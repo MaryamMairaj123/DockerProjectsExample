@@ -1,20 +1,9 @@
-def star_diamond():
-    for row in range(4):
-        for space in range(3 - row):
-            print(' ', end='')
-        for star in range(row + 1):
-            print('*', end='')
-        for star in range(row):
-            print('*', end='')
-        print()
-    for row in range(3):
-        for space in range(row + 1):
-            print(' ', end='')
-        for star in range(3 - row):
-            print('*', end='')
-        for star in range(2 - row):
-            print('*', end='')
-        print()
+# Input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-if __name__ == "__main__":
-    star_diamond()
+# Adding two numbers
+sum = num1 + num2
+
+# Display the sum
+print("The sum is:", sum)

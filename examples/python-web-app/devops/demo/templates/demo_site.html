@@ -1,101 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: yellow;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: yellow;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Beauty Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="top-bar">
+            <p>Free Call: (971) 123-12-12 | Opening Hours: Mon-Fri: 10 am-8 pm</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <h1>Maya's Beauty</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Maya Beauty Salon</h2>
+            <h3>Beauty as a gift</h3>
+            <p>Maya Beauty Salon offers the latest and highest quality services for you and all your family members. We specialize in all beauty treatments and our team is fully professional and innovative, from makeup services to hairstyling.</p>
+            <a href="#services" class="btn">Our Services</a>
+        </div>
+    
+        <!-- Slider Container -->
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="https://www.wondergifts.ae/cdn/shop/files/Manicure_20and_20Pedicure_20at_20any_20Location_20of_20your_20Choice2_858x572.jpg?v=1719010223" alt="Beauty Image 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="https://www.wondergifts.ae/cdn/shop/files/Manicure_20and_20Pedicure_20at_20any_20Location_20of_20your_20Choice1_858x644.jpg?v=1719010223" alt="Beauty Image 2">
+                </div>
+            </div>
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+    
 
-<header>
-  <h2>Free DevOps Course By Abhishek</h2>
-</header>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Founded in 2005, Maya Beauty Salon has been dedicated to providing the best beauty services in LA. Our mission is to help you feel confident and beautiful, inside and out. Our team of professionals is passionate about bringing you the latest beauty trends and treatments, customized to your needs.</p>
+    </section>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="www.youtube.com/@AbhishekVeeramalla">YouTube</a></li>
-      <li><a href="www.linkedin.com/in/abhishek-veeramalla-77b33996/">LinkedIn</a></li>
-      <li><a href="https://telegram.me/abhishekveeramalla">Telegram</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Agenda</h1>
-    <p>Learn DevOps with strong foundational knowledge and practical understanding</p>
-    <p>Please Share the Channel with your friends and colleagues</p>
-  </article>
-</section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Hairdressing</h3>
+                <p>From trendy cuts to stunning color transformations, our hairdressing services are designed to help you look and feel your best.</p>
+            </div>
+            <div class="service-item">
+                <h3>Makeup</h3>
+                <p>Whether it's for a special occasion or just a night out, our makeup artists will create the perfect look for you.</p>
+            </div>
+            <div class="service-item">
+                <h3>Skincare</h3>
+                <p>Indulge in our rejuvenating skincare treatments, tailored to your skin type, to achieve a glowing complexion.</p>
+            </div>
+            <div class="service-item">
+                <h3>Manicure & Pedicure</h3>
+                <p>Pamper yourself with our luxurious manicure and pedicure services, ensuring your hands and feet look flawless.</p>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  <p>@AbhishekVeeramalla</p>
-</footer>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <p>Coming soon...</p>
+    </section>
 
+    <section id="blog" class="blog">
+        <h2>Latest from Our Blog</h2>
+        <article class="blog-post">
+            <h3>Top 10 Beauty Trends for 2024</h3>
+            <p>Discover the hottest beauty trends of 2024 and how you can incorporate them into your daily routine. From bold lips to minimalist skincare, we've got all the tips you need.</p>
+            <a href="#" class="btn">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h3>How to Care for Your Skin in Winter</h3>
+            <p>Winter can be harsh on your skin. Learn the best practices for keeping your skin hydrated and glowing during the colder months.</p>
+            <a href="#" class="btn">Read More</a>
+        </article>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to book an appointment, please don't hesitate to reach out to us.</p>
+        <a href="mailto:info@mayabeautysalon.com" class="btn">Email Us</a>
+        <a href="tel:97131231212" class="btn">Call Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Maya Beauty Salon. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
-
